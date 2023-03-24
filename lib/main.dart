@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '1-Nothing/ui.dart';
+import '4_gif screens/ui.dart';
 
-
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       useInheritedMediaQuery: true,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: NothingExample(),
+      home: GifScreen(),
     );
   }
 }
